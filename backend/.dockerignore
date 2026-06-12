@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+storage/videos/raw/*
+storage/videos/final/*
+storage/audio/*
+storage/thumbnails/*
+storage/youtube_token.pickle
+*.egg-info/
+.pytest_cache/

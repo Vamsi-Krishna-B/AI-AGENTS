@@ -1,0 +1,16 @@
+[tools]
+node = "20"
+python = "3.11"
+uv = "latest"
+
+[tasks.dev]
+description = "Run the full development stack with hot reload."
+run = "docker compose -f docker-compose.dev.yml up"
+
+[tasks.dev-build]
+description = "Build and run the development stack."
+run = "docker compose -f docker-compose.dev.yml up --build"
+
+[tasks.dev-down]
+description = "Stop the development stack."
+run = "docker compose -f docker-compose.dev.yml down"
